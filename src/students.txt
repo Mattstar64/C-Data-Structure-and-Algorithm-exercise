@@ -1,0 +1,4 @@
+Alexandre,2,34,55
+Marcus,5,100,100
+Zealot,1,90,20
+lily,1,0,0
