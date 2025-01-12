@@ -4,22 +4,19 @@
 #include "sorter.h"
 #include "file_manager.h"
 
-
 using namespace std;
 
-
 void menu(){
-    //a menu to display the different functionalities of the program
     cout << "\n--- Student Management System ---\n";
     cout << "1. Display All Students\n";
     cout << "2. Add Student\n";
     cout << "3. Update Student\n";
     cout << "4. Remove Student\n";
     cout << "5. Find Student\n";
-    cout << "6. Exit\n";
+    cout << "6. Sort Students by Year\n";
+    cout << "7. Sort Students by Name\n";
+    cout << "8. Exit\n";
     cout << "Enter your choice: ";
-
-    //TO DO : sorter
 }
 
 int main() {
@@ -104,12 +101,33 @@ int main() {
             break;
         }
 
-        case 6:
+        case 6: {
+            // Sort students by year using mergeSort
+            mergeSort(manager.getStudents(), 0, manager.getStudents().size() - 1);
+            cout << "Students sorted by year.\n";
+            
+            // Save the sorted list to the file
+            saveToFile(manager.getStudents(), filename);
+            break;
+        }
+
+        case 7: {
+            // Sort students by name using mergeSortByName
+            mergeSortByName(manager.getStudents(), 0, manager.getStudents().size() - 1);
+            cout << "Students sorted by name.\n";
+            
+            // Save the sorted list to the file
+            saveToFile(manager.getStudents(), filename);
+            break;
+        }
+
+        case 8:
             cout << "Exiting...\n";
             break;
+
 
         default:
             cout << "Invalid choice. Try again.\n";
         }
-    } while (choice != 6);
+    } while (choice != 8);
 }
