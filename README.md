@@ -6,7 +6,7 @@ this repository has been created for an C++ exercise about Data Structure and Al
 For both version you need to open a terminal and go to the folder location using "cd c:\FolderLocation\src".
 
 ### Windows
-In the terminal, write "**rg++ main.cpp -o student_lister**" and the program should launch himself.
+In the terminal, write "**g++ main.cpp -o student_lister**" and the program should launch himself.
 
 ### MacOS
 On MacOS you need to write "**clang++ main.cpp -o student_lister**" and it should launch himself.
