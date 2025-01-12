@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/matteo/Documents/GitHub/C-Data-Structure-and-Algorithm-exercise/src/output/main'
+relocations:     []
+...
