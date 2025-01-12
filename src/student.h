@@ -19,7 +19,7 @@ public:
         : name(n), year(y), engGrade(eng), compSciGrade(comp) {}
 
     // Getters
-     string getName() const { return name; }
+    string getName() const { return name; }
     int getYear() const { return year; }
     int getEngGrade() const { return engGrade; }
     int getCompSciGrade() const { return compSciGrade; }
